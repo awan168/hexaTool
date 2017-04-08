@@ -43,8 +43,8 @@
        <tbody> 
            <tr>
                <td colspan="2">
-       	   <p><p id="hexai"></p></p>
-                  <p><p id="hexaDesci"></p></p>
+        	   <p><p id="hexai"></p></p>
+                   <p><p id="hexaDesci"></p></p>
                </td>
                <td>
                   <p><p id="hexaSymbol"></p></p>
@@ -53,10 +53,11 @@
            <tr>
                <td>變卦</td> 
                <td><p id="hexaChangei"></p></td> 
-               <td>
-                  <p><p id="hexaChangeSymbol"></p></p>
-               </td>
+               <td><p id="hexaChangeSymbol"></p></td>
            </tr>
+           <tr>               
+               <td colspan="3"><p id="hexaNote"></p></td>
+           </tr>               
        </tbody>
        </table>
        <p> &nbsp;</p>
@@ -415,6 +416,8 @@
        
        function getHexaNow() {
        
+           var  noteLink = 'hexaNoteOnly.html#Hexagram_'+yaoYY;
+
            getHexaYYNow(yaoYY);
            document.getElementById("hexai").innerHTML = hexaNow;
            document.getElementById("hexaDesci").innerHTML = hexaDescNow;
@@ -422,6 +425,8 @@
            getHexaYYNow(yaoCYY);
            document.getElementById("hexaChangei").innerHTML = hexaNow;
            document.getElementById("hexaChangeSymbol").innerHTML = yaoU+"\n"+yaoD;
+
+           document.getElementById("hexaNote").innerHTML='<object type="text/html" data='+noteLink+'></object>';
        }
        
        function reload() {
@@ -429,9 +434,6 @@
        }
        
        </script>
-       
-       </body>
-       </html>
        
        
   </div>
