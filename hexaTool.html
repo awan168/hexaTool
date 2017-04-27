@@ -62,6 +62,7 @@
        </tbody>
        </table>
        <p> &nbsp;</p>
+       <p><p id="hexaMethod"></p></p>
        
        
        
@@ -418,6 +419,15 @@
        function getHexaNow() {
        
            var  noteLink = 'hexaNoteOnly.html#Hexagram_'+yaoYY;
+           var  hexaMethodStr = "起課卦象解讀方法: <br><ur>\
+                                <li>無爻變: 看本卦之卦辭</li> \
+                                <li>一爻變: 看本卦該爻的爻辭</li> \
+                                <li>二爻變: 看本卦上面變爻的爻辭</li> \
+                                <li>三爻變: 看本卦辭辭及變卦卦辭同看</li> \
+                                <li>四爻變: 看本卦下面不變爻的爻辭</li> \
+                                <li>五爻變: 看本卦唯一不變爻的爻辭</li> \
+                                <li>六爻變: 看變卦之卦辭</li> \
+                                </ur>";
 
            getHexaYYNow(yaoYY);
            document.getElementById("hexai").innerHTML = hexaNow;
@@ -426,6 +436,7 @@
            getHexaYYNow(yaoCYY);
            document.getElementById("hexaChangei").innerHTML = hexaNow;
            document.getElementById("hexaChangeSymbol").innerHTML = yaoU+"\n"+yaoD;
+           document.getElementById("hexaMethod").innerHTML = hexaMethodStr;
 
            document.getElementById("hexaNote").innerHTML='<object type="text/html" data='+noteLink+'></object>';
        }
