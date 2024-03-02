@@ -14,18 +14,19 @@
   } );
   </script>
 </head>
-<body>
+<body><script src="header.js"></script>
 
-         <img src="hexaGen_title.gif" height="170" width="300">
+<center> <img src="hexaGen_title.gif" height="170" width="300"></center>
          <!--<p>數位人生哲學起課程式</p>-->
  
 <div id="tabs">
   <ul>
     <li><a href="#tabs-1">易卦起課</a></li>
     <li><a href="#tabs-2">六十四卦表</a></li>
+    <li><a href="#tabs-5">易經白話解說</a></li>     
     <li><a href="#tabs-3">周易本文</a></li>
   </ul>
-  <div id="tabs-1">
+<center><div id="tabs-1" style="border: 1px solid black; padding: 10px;width:80%">
 
 
        <div>
@@ -62,7 +63,7 @@
        </tbody>
        </table>
        <p> &nbsp;</p>
-       <p><p id="hexaMethod"></p></p>
+       <p><p id="hexaMethod" style='width:80%; text-align:left; border: 1px solid black; padding: 10px;'></p></p>
        
        
        
@@ -419,15 +420,15 @@
        function getHexaNow() {
        
            var  noteLink = 'hexaNoteOnly.html#Hexagram_'+yaoYY;
-           var  hexaMethodStr = "起課卦象解讀方法: <br><ur>\
-                                <li>無爻變: 看本卦之卦辭</li> \
-                                <li>一爻變: 看本卦該爻的爻辭</li> \
-                                <li>二爻變: 看本卦上面變爻的爻辭</li> \
-                                <li>三爻變: 看本卦辭辭及變卦卦辭同看</li> \
-                                <li>四爻變: 看本卦下面不變爻的爻辭</li> \
-                                <li>五爻變: 看本卦唯一不變爻的爻辭</li> \
-                                <li>六爻變: 看變卦之卦辭</li> \
-                                </ur>";
+           var  hexaMethodStr = "起課卦象解讀方法: <br>\
+                                ■ 無爻變: 看本卦之卦辭<br> \
+                                ■ 一爻變: 看本卦該爻的爻辭<br> \
+                                ■ 二爻變: 看本卦上面變爻的爻辭<br> \
+                                ■ 三爻變: 看本卦辭辭及變卦卦辭同看<br> \
+                                ■ 四爻變: 看本卦下面不變爻的爻辭<br> \
+                                ■ 五爻變: 看本卦唯一不變爻的爻辭<br> \
+                                ■ 六爻變: 看變卦之卦辭<br> \
+                                ";
 
            getHexaYYNow(yaoYY);
            document.getElementById("hexai").innerHTML = hexaNow;
@@ -451,11 +452,11 @@
   </div>
   <div id="tabs-2">
 
-         <img src="64Hexagrams.gif" height="280" width="300">
+<center>         <img src="64Hexagrams.gif" height="auto" width="90%"><center>
          
          <br>
 
-  </div>
+  </div></center>
 
 
 
@@ -5580,12 +5581,125 @@
 
 
   </div>
+
+  <div id="tabs-5">
+<center><span style="color: rgb(0, 0, 0); font-weight: bold; font-size:45px; font-family:標楷體; line-height:1.6">周易白話解說</span></center>
+<center><table border="1" cellpadding="1" cellspacing="1" style="width: 30%; font-size:22px"  style="float: left">
+<tr><td style="text-align: center;"></td><td style="text-align: center;">天</td><td style="text-align: center;">澤</td><td style="text-align: center;">火</td><td style="text-align: center;">雷</td><td style="text-align: center;">風</td><td style="text-align: center;">水</td><td style="text-align: center;">山</td><td style="text-align: center;">地</td><tr>
+        <tr>
+        <td style="text-align: center;">天</td>  
+        <td style="text-align: center;"><button onclick="putItem(0)">乾 </button></td>
+        <td style="text-align: center;"><button onclick="putItem(1)">履</button></td>
+        <td style="text-align: center;"><button onclick="putItem(2)">同人</button></td>
+        <td style="text-align: center;"><button onclick="putItem(3)">無妄</button></td>
+        <td style="text-align: center;"><button onclick="putItem(4)">垢</button></td>
+        <td style="text-align: center;"><button onclick="putItem(5)">訟</button></td>
+        <td style="text-align: center;"><button onclick="putItem(6)">遯</button></td>
+        <td style="text-align: center;"><button onclick="putItem(7)">否</button></td>
+        </tr>
+        <tr>
+        <td style="text-align: center;">澤</td>    
+        <td style="text-align: center;"><button onclick="putItem(8)">夬</button></td>
+        <td style="text-align: center;"><button onclick="putItem(9)">兌</button></td>
+        <td style="text-align: center;"><button onclick="putItem(10)">革</button></td>
+        <td style="text-align: center;"><button onclick="putItem(11)">隨</button></td>
+        <td style="text-align: center;"><button onclick="putItem(12)">大過</button></td>
+        <td style="text-align: center;"><button onclick="putItem(13)">困</button></td>
+        <td style="text-align: center;"><button onclick="putItem(14)">井</button></td>
+        <td style="text-align: center;"><button onclick="putItem(15)">萃</button></td>
+        </tr>
+        <tr>
+        <td style="text-align: center;">火</td>    
+        <td style="text-align: center;"><button onclick="putItem(16)">大有</button></td>
+        <td style="text-align: center;"><button onclick="putItem(17)">睽</button></td>
+        <td style="text-align: center;"><button onclick="putItem(18)">離</button></td>
+        <td style="text-align: center;"><button onclick="putItem(19)">噬嗑</button></td>
+        <td style="text-align: center;"><button onclick="putItem(20)">鼎</button></td>
+        <td style="text-align: center;"><button onclick="putItem(21)">未濟</button></td>
+        <td style="text-align: center;"><button onclick="putItem(22)">旅</button></td>
+        <td style="text-align: center;"><button onclick="putItem(23)">晉</button></td>
+        </tr>
+        <tr>
+        <td style="text-align: center;">雷</td>    
+        <td style="text-align: center;"><button onclick="putItem(24)">大壯</button></td>
+        <td style="text-align: center;"><button onclick="putItem(25)">歸妹</button></td>
+        <td style="text-align: center;"><button onclick="putItem(26)">豐</button></td>
+        <td style="text-align: center;"><button onclick="putItem(27)">雷</button></td>
+        <td style="text-align: center;"><button onclick="putItem(28)">恆</button></td>
+        <td style="text-align: center;"><button onclick="putItem(29)">解</button></td>
+        <td style="text-align: center;"><button onclick="putItem(30)">小過</button></td>
+        <td style="text-align: center;"><button onclick="putItem(31)">豫</button></td>
+        </tr>
+        <tr>
+        <td style="text-align: center;">風</td>    
+        <td style="text-align: center;"><button onclick="putItem(32)">小畜</button></td>
+        <td style="text-align: center;"><button onclick="putItem(33)">中孚</button></td>
+        <td style="text-align: center;"><button onclick="putItem(34)">家人</button></td>
+        <td style="text-align: center;"><button onclick="putItem(35)">益</button></td>
+        <td style="text-align: center;"><button onclick="putItem(36)">巽</button></td>
+        <td style="text-align: center;"><button onclick="putItem(37)">渙</button></td>
+        <td style="text-align: center;"><button onclick="putItem(38)">漸</button></td>
+        <td style="text-align: center;"><button onclick="putItem(39)">觀</button></td>
+        </tr>
+        <tr>
+        <td style="text-align: center;">水</td>    
+        <td style="text-align: center;"><button onclick="putItem(40)">需</button></td>
+        <td style="text-align: center;"><button onclick="putItem(41)">節</button></td>
+        <td style="text-align: center;"><button onclick="putItem(42)">既濟</button></td>
+        <td style="text-align: center;"><button onclick="putItem(43)">屯</button></td>
+        <td style="text-align: center;"><button onclick="putItem(44)">井</button></td>
+        <td style="text-align: center;"><button onclick="putItem(45)">坎</button></td>
+        <td style="text-align: center;"><button onclick="putItem(46)">蹇</button></td>
+        <td style="text-align: center;"><button onclick="putItem(47)">比</button></td>
+        </tr>
+        <tr>
+        <td style="text-align: center;">山</td>    
+        <td style="text-align: center;"><button onclick="putItem(48)">大畜</button></td>
+        <td style="text-align: center;"><button onclick="putItem(49)">損</button></td>
+        <td style="text-align: center;"><button onclick="putItem(50)">賁</button></td>
+        <td style="text-align: center;"><button onclick="putItem(51)">頤</button></td>
+        <td style="text-align: center;"><button onclick="putItem(52)">蠱</button></td>
+        <td style="text-align: center;"><button onclick="putItem(53)">蒙</button></td>
+        <td style="text-align: center;"><button onclick="putItem(54)">艮</button></td>
+        <td style="text-align: center;"><button onclick="putItem(55)">剝</button></td>
+        </tr>
+        <tr>
+        <td style="text-align: center;">地</td>    
+        <td style="text-align: center;"><button onclick="putItem(56)">泰</button></td>
+        <td style="text-align: center;"><button onclick="putItem(57)">臨</button></td>
+        <td style="text-align: center;"><button onclick="putItem(58)">明夷</button></td>
+        <td style="text-align: center;"><button onclick="putItem(59)">復</button></td>
+        <td style="text-align: center;"><button onclick="putItem(60)">升</button></td>
+        <td style="text-align: center;"><button onclick="putItem(61)">師</button></td>
+        <td style="text-align: center;"><button onclick="putItem(62)">謙</button></td>
+        <td style="text-align: center;"><button onclick="putItem(63)">坤</button></td>
+        </tr>
+  </table>
+  <br><br>
+        <div style="width:80%; text-align:left; font-size:22px; border: 1px solid black; padding: 10px;"><p id="display"></p></div>
+
+</center>
+
+        <script src='hexa_description_DB.js'></script>
+	<script>
+	  
+	  function putItem(num){
+	      //                document.getElementById("display").innerHTML = "<pre style='olor: rgb(0, 0, 0); word-wrap: break-word; white-space: pre-wrap; font-size:calc(10px + 0.50625vw)'>"+dbStrQ[num]+"</pre>";
+                document.getElementById("display").innerHTML = "<pre style='olor: rgb(0, 0, 0); word-wrap: break-word; white-space: pre-wrap; font-size:20px'>"+dbStrQ[num]+"</pre>";        	      	      
+	  }
+          
+	</script>
+	
+  </div>
+
+
+
+
+
 </div>
-
-<a href="https://awan168.github.io/acupTool/acupList_YangWJ.html">*</a>
  
 
- 
+
 </body>
 </html>
 
